@@ -1,13 +1,22 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero{
+  padding-top: 9rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.label{
+   padding: .5rem  0 !important;
+    text-align: left !important;
+    display: block;
+    font-size: 1.2rem !important;
 }
+
+.form-hero{
+  max-width: 20rem ;
+  margin: 12rem auto !important;
+  text-align: left !important;
+}
+
+
