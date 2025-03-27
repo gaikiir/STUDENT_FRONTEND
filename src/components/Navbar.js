@@ -14,10 +14,10 @@ export default function Component() {
    }
     
     return (
-        <Navbar className="bg-slate-800 text-slate-100 fixed left-0 top-0 right-0">
+        <Navbar className="bg-slate-800 text-slate-100 fixed left-0 top-0 right-0 z-50">
             <Navbar.Brand href="/">
                 <img src="/favicon.svg" className="mr-3 h-6 sm:h-9" alt="" />
-                <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Online exams</span>
+                <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">IST Online exams</span>
             </Navbar.Brand>
             <div className="flex md:order-3">
                 <Dropdown
@@ -42,7 +42,7 @@ export default function Component() {
                 <Navbar.Link className="text-base text-slate-50" href="/" active>
                     Home
                 </Navbar.Link>
-                <Navbar.Link className="text-base text-slate-50" href="/register">About</Navbar.Link>
+                <Navbar.Link className="text-base text-slate-50" href="/register">News</Navbar.Link>
                 <Navbar.Link className="text-base text-slate-50" href="#">Services</Navbar.Link>
                 <Navbar.Link className="text-base text-slate-50" href="#">Blog</Navbar.Link>
                 <Navbar.Link className="text-base text-slate-50" href="#">Contact</Navbar.Link>
