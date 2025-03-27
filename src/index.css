@@ -3,9 +3,17 @@
 @tailwind utilities;
 
 .hero{
-  padding-top: 9rem;
+  padding-top: 5rem;
+  background-image:url('../public/images/school-exams.jpg');
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
 }
+.--title{
 
+}
 .label{
    padding: .5rem  0 !important;
     text-align: left !important;
@@ -17,6 +25,24 @@
   max-width: 20rem ;
   margin: 12rem auto !important;
   text-align: left !important;
+}
+
+/* .header{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+.admin-content{
+  padding-top: 5rem ;
+}
+
+.card{
+  border:none !important;
+  background: #f9fafb !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 
