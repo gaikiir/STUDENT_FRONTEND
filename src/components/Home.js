@@ -1,71 +1,48 @@
 
 "use client";
-import Footer from './Footer'
-import { Card, Button } from "flowbite-react";
-
+import { Footer, FooterBrand, FooterCopyright, FooterDivider, FooterLink, FooterLinkGroup } from "flowbite-react";
+import {  Button } from "flowbite-react";
+import { Link } from "react-router-dom/cjs/react-router-dom";
 export default function Component() {
     return (
         <>
-            <div className="max-w-7xl mx-auto  hero  ">
-                {/* Heading */}
-                <h1 className="text-3xl font-semibold tracking-tight uppercase text-gray-900 dark:text-white mb-8">
-                    Welcome to IST Online Exam
-                </h1>
-
-                {/* Card Container */}
-                <div className="flex flex-col items-center justify-center space-y-6 shrink-1 sm:flex sm:flex-row sm:space-y-0 sm:space-x-6">
-                    {/* Card 1 */}
-                    <Card className="max-w-sm flex-1">
-                        <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                            Noteworthy Technology Acquisitions 2021
-                        </h5>
-                        <p className="font-normal text-gray-700 dark:text-gray-400">
-                            Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
-                        </p>
-                        <Button>
-                            Read more
-                            <svg
-                                className="-mr-1 ml-2 h-4 w-4"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    fillRule="evenodd"
-                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                    clipRule="evenodd"
-                                />
-                            </svg>
-                        </Button>
-                    </Card>
-
-                    {/* Card 2 */}
-                    <Card className="max-w-sm flex-1">
-                        <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                            Noteworthy Technology Acquisitions 2021
-                        </h5>
-                        <p className="font-normal text-gray-700 dark:text-gray-400">
-                            Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
-                        </p>
-                        <Button>
-                            Read more
-                            <svg
-                                className="-mr-1 ml-2 h-4 w-4"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    fillRule="evenodd"
-                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                    clipRule="evenodd"
-                                />
-                            </svg>
-                        </Button>
-                    </Card>
+            <div className=" h-screen hero_header  relative bg-slate-700">
+               
+                <div className="max-w-7xl mx-auto header bg-green- absolute top-1/3 left-1/2 -translate-x-1/2 late-y-1/2">
+                    <div className="text-center ">
+                        <h1 className="text-4xl font-bold text-white ">IST Online Exam</h1>
+                        <p className="text-lg text-white mt-3">Welcome to the IST Online Exam, the best online exam platform for students</p>
+                        <div className="mt-5">
+                            <Link to="/register " className="inline-block">
+                                <Button className="bg-green-500 hover:bg-green-600">Get Started</Button>
+                            </Link>
+                        </div>
+                    </div>
                 </div>
+
+                <Footer  container  className="fixed bottom-0 bg-slate-800 text-white pt-12">
+                    <div className="w-full text-center">
+                        <div className="w-full justify-between sm:flex sm:items-center sm:justify-between ">
+                            <FooterBrand
+                                href="https://flowbite.com"
+                                src="https://flowbite.com/docs/images/logo.svg"
+                                alt="Flowbite Logo"
+                                name="Flowbite"
+                            />
+                            <FooterLinkGroup>
+                                <FooterLink href="#">About</FooterLink>
+                                <FooterLink href="#">Privacy Policy</FooterLink>
+                                <FooterLink href="#">Licensing</FooterLink>
+                                <FooterLink href="#">Contact</FooterLink>
+                            </FooterLinkGroup>
+                        </div>
+                        <FooterDivider />
+                        <FooterCopyright href="#" by="Flowbite™" year={2022} />
+                    </div>
+                </Footer>
             </div>
-            <Footer />
+
         </>
     );
 }
+
