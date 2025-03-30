@@ -43,7 +43,7 @@ export default function Component() {
                     Home
                 </Navbar.Link>
                 <Navbar.Link className="text-base text-slate-50" href="/register">News</Navbar.Link>
-                <Navbar.Link className="text-base text-slate-50" href="#">Services</Navbar.Link>
+                <Navbar.Link className="text-base text-slate-50" href="/update">sevices</Navbar.Link>
                 <Navbar.Link className="text-base text-slate-50" href="#">Blog</Navbar.Link>
                 <Navbar.Link className="text-base text-slate-50" href="#">Contact</Navbar.Link>
             </Navbar.Collapse>

@@ -23,8 +23,9 @@
 
 .form-hero{
   max-width: 20rem ;
-  margin: 12rem auto !important;
+  margin: 0 auto !important;
   text-align: left !important;
+  padding-top: 10rem;
 }
 
 /* .header{

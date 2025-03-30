@@ -35,3 +35,72 @@
             </div>
 
 linear-gradient(to right bottom, rgba(0,0,0,.6),rgba(0,0,0,.6)) , 
+
+
+ <Table striped>
+                                    <TableHead>
+                                        <TableRow >
+                                            <TableHeadCell>First name</TableHeadCell>
+                                            <TableHeadCell>Last Name</TableHeadCell>
+                                            <TableHeadCell>Gender</TableHeadCell>
+                                            <TableHeadCell>Update</TableHeadCell>
+                                            <TableHeadCell>Delete Student</TableHeadCell>
+                                        </TableRow>
+                                    </TableHead>
+                                    <TableBody>
+                                        {/* {users.map((user) => ( */}
+                                        <TableRow >
+                                           {records.map((r,i)=>(
+                                               <div key={i}>
+                                                <TableCell>{r.FirstName}</TableCell>
+                                                <TableCell>{r.LastName}</TableCell>
+                                                <TableCell>{r.Gender}</TableCell>
+                                                <TableCell>
+                                                    <Link to="/studentupdate" onClick={(e)=>{e.preventDefault(); LoadUpdate(r._id)}}>
+                                                           Edit
+                                                    </Link>
+                                                   
+                                                </TableCell>
+                                                   <TableCell>
+                                                       <Link to="/studentupdate" onClick={(e) => { e.preventDefault(); LoadUpdate(r._id) }}>
+                                                           Delete
+                                                       </Link>
+
+                                                   </TableCell>
+                                            </div>
+                                           ))}
+                                        </TableRow>
+                                       
+                                    </TableBody>
+                                   
+                                </Table>
+
+
+                                 <div className="form-hero">
+     <h5 className="mb-5 text-center text-2xl font-bold uppercase">update student</h5>
+     <form className="flex max-w-md flex-col gap-4" onSubmit={handleSubmitUpdate}>
+      <div>
+        <div className="mb-2 block">
+          <Label htmlFor="email1">First Name</Label>
+        </div>
+        <TextInput id="email1" onChange={handleUpdate} name="FirstName" type="text" placeholder="John" required />
+      </div>
+      <div>
+        <div className="mb-2 block">
+          <Label htmlFor="password1">Last Name</Label>
+        </div>
+        <TextInput id="password1" onChange={handleUpdate} name="LastName" placeholder="Doe" type="text" required />
+      </div>
+     <div className="mb-2 block">
+        <Label htmlFor="countries">Select your Gender</Label>
+      </div>
+      <Select id="countries" onChange={handleUpdate} name="Gender" required>
+        <option>----Genders----</option>
+        <option>Male</option>
+        <option>Female</option>
+        
+      </Select>
+      <Button type="submit">Update</Button>
+    </form>
+   <ToastContainer/>
+   </div>
