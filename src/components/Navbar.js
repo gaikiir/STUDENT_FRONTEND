@@ -10,7 +10,7 @@ export default function Component() {
   const navigate = useHistory()
     //handle dashboard loadings when user clicks on
    const handledashboard =()=>{
-    navigate.push('/dashboard')
+    navigate.push('/dashboard');
    }
     
     return (
@@ -42,9 +42,9 @@ export default function Component() {
                 <Navbar.Link className="text-base text-slate-50" href="/" active>
                     Home
                 </Navbar.Link>
-                <Navbar.Link className="text-base text-slate-50" href="/register">News</Navbar.Link>
+                <Navbar.Link className="text-base text-slate-50" href="/News">News</Navbar.Link>
                 <Navbar.Link className="text-base text-slate-50" href="/update">sevices</Navbar.Link>
-                <Navbar.Link className="text-base text-slate-50" href="#">Blog</Navbar.Link>
+                <Navbar.Link className="text-base text-slate-50" href="/studentdash">Blog</Navbar.Link>
                 <Navbar.Link className="text-base text-slate-50" href="#">Contact</Navbar.Link>
             </Navbar.Collapse>
         </Navbar>

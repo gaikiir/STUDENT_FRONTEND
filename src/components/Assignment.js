@@ -9,13 +9,12 @@ export default function Component() {
             <div className="form-hero">
                 <form>
                     <div className="max-w-md">
-                        <div className="mb-2 block">
-                            <Label htmlFor="comment" value="Your Event to publish" />
+                        <div className="mb-5 block">
+                            <Label htmlFor="comment" value="Your Event to publish" className="font-bold uppercase label"/>
                         </div>
-                        <Textarea id="comment" name="event" placeholder="Leave a comment..." required rows={8} />
+                        <Textarea id="comment" name="event" placeholder="Leave a comment..." required rows={7} />
                     </div>
                     <Button className="w-full mt-4" type="submit">
-
                         Create event
                     </Button>
                 </form>

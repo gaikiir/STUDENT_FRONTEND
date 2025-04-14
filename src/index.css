@@ -4,21 +4,23 @@
 
 .hero{
   padding-top: 5rem;
-  background-image:url('../public/images/school-exams.jpg');
+  background-image: linear-gradient(to bottom right,rgba(0, 0,0,.4),rgba(0,0,0,.5)),url('../public/images/school-exams.jpg');
   background-size: cover;
   background-position:center;
   background-repeat: no-repeat;
-  height: 100vh;
   position: relative;
 }
-.--title{
 
+.news{
+  padding-top: 4rem;
 }
+
 .label{
    padding: .5rem  0 !important;
     text-align: left !important;
     display: block;
     font-size: 1.2rem !important;
+    text-align: center !important;
 }
 
 .form-hero{
@@ -28,6 +30,11 @@
   padding-top: 10rem;
 }
 
+.cta-section{
+  margin-top: 5rem;
+  padding: .5rem;
+}
+
 /* .header{
   position: absolute;
   top: 40%;
@@ -35,8 +42,17 @@
   transform: translate(-50%, -50%);
 } */
 
-.admin-content{
-  padding-top: 5rem ;
+.wrapper{
+  padding-top: 5rem;
+}
+
+.table-content{
+  height: 20rem !important;
+  overflow-y: auto !important;
+  /* overflow-x: hidden !important; */
+  border-radius: none !important;
+  border: none !important;
+  outline: none !important;
 }
 
 .card{
@@ -44,6 +60,11 @@
   background: #f9fafb !important;
   outline: none !important;
   box-shadow: none !important;
+}
+
+.hr{
+  margin: .5rem 0 .5rem 0 !important;
+  background-color: #1b1b1c !important;
 }
 
 

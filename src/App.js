@@ -9,7 +9,9 @@ import Register from './components/Register';
 import Assignment from './components/Assignment';
 import Addstudent from './components/Addstudent';
 import Updates from './components/Updates';
-import Delete from './components/Delete';
+// import Delete from './components/Delete';
+import Studentdashboard from './components/Studentdashboard';
+import News from './components/News'
 function App() {
   return (
     <Router>
@@ -20,11 +22,13 @@ function App() {
             <Route exact path='/'><Home/></Route>
             <Route path='/dashboard'><Admindashboard/></Route>
             <Route path='/register'><Register/></Route>
-            <Router path='/assign'><Assignment/></Router>
+            <Router path='/createEvent'><Assignment/></Router>
             <Route path='/login'><Login/></Route>
             <Route path='/addStudent'><Addstudent/></Route>
             <Route path='/update'> <Updates/></Route>
-            <Route path='/deletestudent'><Delete/></Route>
+            <Route path='/studentdash'><Studentdashboard/></Route>
+            <Route path='/studentdash'><Studentdashboard/></Route>
+          <Route path ='/News'><News/></Route>
           </Switch>
         </div>
       </div>
